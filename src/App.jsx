@@ -123,8 +123,7 @@ function App() {
     try {
       let res;
       // Backend URL
-      const backendUrl =
-        "https://m1-backend-api-gbgscre3aubmevhe.newzealandnorth-01.azurewebsites.net/classify";
+      const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
       if (inputType === "file" && file) {
         // Convert file to base64 for backend
