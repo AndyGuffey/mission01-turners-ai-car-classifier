@@ -3,6 +3,8 @@
 This project is a full-stack cloud application that lets the user classify car images using Azure Custom Vision.
 It consists of a React frontend and a Node.js/Express backend.
 
+**🖥️ [View the live app here](https://icy-glacier-0bd51fe10.2.azurestaticapps.net)**
+
 ---
 
 ## Features
@@ -27,7 +29,11 @@ It consists of a React frontend and a Node.js/Express backend.
    - Displays the classification result to the user.
 
 > **Note:** The backend (Node.js/Express) is maintained in a separate repository.  
-> [Mission 01 Backend repository](https://github.com/AndyGuffey/mission01-backend) > ![Project Flow Diagram](src/assets/architecture-diagram.png)
+> [Mission 01 Backend repository](https://github.com/AndyGuffey/mission01-backend)
+
+#### Project Architecture Diagram
+
+> ![Project Flow Diagram](src/assets/architecture-diagram.png)
 
 ---
 
@@ -45,6 +51,10 @@ mission01-backend/         # (separate repo)
   ├── .env.example        # Example environment variables for backend
   ├── package.json        # Backend dependencies and scripts
   └── ...
+
+Azure Custom Vision Resource  # (external cloud resource)
+  ├── Prediction Endpoint     # Used by backend for classification
+  └── Prediction Key          # Stored securely in backend environment variables
 ```
 
 ---
@@ -54,7 +64,7 @@ mission01-backend/         # (separate repo)
 ### 1. Clone frontend Repo
 
 ```sh
-git clone https://github.com/AndyGuffey/mission-01.git
+git clone https://github.com/AndyGuffey/mission01-turners-ai-car-classifier
 cd mission-01
 ```
 
